@@ -1,0 +1,49 @@
+.timer-block {
+  display: flex;
+  background-color: @cultured;
+  column-gap: 20px;
+  padding: 12px;
+}
+
+.timer-block__time {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: @basic-black;
+}
+
+.timer-block__text {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 100%;
+  color: @basic-black;
+}
+
+.timer-block__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid @light-grey;
+  padding: 5px 10px 5px 10px;
+  background-color: @basic-white;
+}
+
+.timer-block__colon {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: ":";
+    width: 5px;
+    height: 5px;
+    right: -14px;
+  }
+}
+
+.product-block__general {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  color: @basic-black;
+  margin: 50px 0 0 0;
+}

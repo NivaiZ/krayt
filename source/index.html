@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goldy Store</title>
+  <meta name="description" content="Ювелирный магазин">
+  <meta name="keywords" content="Jewelry, Jewelry-store">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body class="page-body">
+  <div class="container">
+    <header class="block-header">
+      <nav class="contact-bar">
+        <ul class="contact-bar__list">
+          <li class="contact-bar__item">
+            <div class="contact-bar__select">
+              <svg class="contact-bar__svg" width="16" height="16">
+                <use xlink:href="./img/sprite.svg#icon-pin"></use>
+              </svg>
+
+              <div class="contact-bar__dropdown dropdown">
+                <button class="dropdown__button" aria-haspopup="true" aria-expanded="false">
+                  Санкт-Петербург
+                  <svg class="contact-bar__svg" width="5" height="5">
+                    <use xlink:href="./img/sprite.svg#icon-arrow__city"></use>
+                  </svg>
+                </button>
+
+                <ul class="dropdown__menu" role="menu" aria-hidden="true">
+
+                  <li class="dropdown__menu--item">
+                    <a href="#">Москва</a>
+                  </li>
+
+                  <li class="dropdown__menu--item">
+                    <a href="#">Челябинск</a>
+                  </li>
+
+                  <li class="dropdown__menu--item">
+                    <a href="#">Екатеринбург</a>
+                  </li>
+
+                  <li class="dropdown__menu--item">
+                    <a href="#">Сочи</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="contact-bar__item">
+            <svg class="contact-bar__svg" width="16" height="16">
+              <use xlink:href="./img/sprite.svg#icon-phone"></use>
+            </svg>
+            <a class="contact-bar__phone" href="tel:88007852535">8 800 785-25-35</a>
+          </li>
+        </ul>
+        <svg class="contact-bar__svg" width="183" height="52">
+          <use xlink:href="./img/sprite.svg#icon-logo"></use>
+        </svg>
+
+        <ul class="contact-bar__list__list navigation-user">
+          <li class="navigation-user__item">
+            <a class="navigation-user__link navigation-user__link--separator" href="#">Вход</a>
+          </li>
+
+          <li class="navigation-user__item">
+            <a class="navigation-user__link" href="#">Регистрация</a>
+          </li>
+        </ul>
+
+        <ul class="contact-bar__list icon-shop">
+          <li class="icon-shop__item">
+            <button class="icon-shop__button icon-shop__button--notification" type="button">
+              <svg class="icon-shop__svg" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-favorite"></use>
+              </svg>
+              <span class="icon-shop__notification">23</span>
+            </button>
+          </li>
+
+          <li class="icon-shop__item">
+            <button class="icon-shop__button" type="button">
+              <svg class="icon-shop__svg" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-chart"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="icon-shop__item">
+            <button class="icon-shop__button" type="button">
+              <svg class="icon-shop__svg" width="20" height="20">
+                <use xlink:href="./img/sprite.svg#icon-bag"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-link">
+        <ul class="main-link__list">
+          <li class="main-link__item">
+            <a href="#" target="_blank" class="main-link__link main-link__link--noactive">Каталог</a>
+          </li>
+
+          <li class="main-link__item">
+            <a href="#" target="_blank" class="main-link__link">Акции</a>
+          </li>
+
+          <li class="main-link__item">
+            <a href="#" target="_blank" class="main-link__link">Бренды</a>
+          </li>
+
+          <li class="main-link__item">
+            <a href="#" target="_blank" class="main-link__link">Магазины</a>
+          </li>
+
+          <li class="main-link__item">
+            <a href="#" target="_blank" class="main-link__link">О нас</a>
+          </li>
+
+          <li class="main-link__item">
+            <a href="#" target="_blank" class="main-link__link">Доставка и оплата</a>
+          </li>
+
+          <li class="main-link__item">
+            <a href="#" target="_blank" class="main-link__link">Статьи</a>
+          </li>
+        </ul>
+
+        <form class="main-link__form form-search" method="post" action="https://echo.htmlacademy.ru">
+          <input class="form-search__input" type="search" placeholder="Поиск по сайту">
+          <button class="form-search__search" type="submit">
+            <svg class="icon-shop__svg" width="20" height="20">
+              <use xlink:href="./img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="general-slider">
+        <h1 class="general-slider__heading">Главный слайдер</h1>
+        <div class="swiper general-slider">
+          <ul class="swiper-wrapper general-slider__wrapper">
+
+            <li class="swiper-slide general-slider__item general-slider__item--first">
+              <svg class="general-slider__svg" width="642" height="642">
+                <use xlink:href="./img/sprite.svg#icon-slider__union"></use>
+              </svg>
+              <img src="./img/ring-general.png" alt="Кольцо" width="548">
+
+              <div class="general-slider__inner">
+                <p class="general-slider__text">
+                  <span class="general-slider__discount">Суперскидка до 60%</span>
+                  <span class="general-slider__production">НА БРИЛЛИАНТЫ</span>
+                </p>
+                <a class="general-slider__link" href="#" target="_blank">Подробнее</a>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <svg class="general-slider__svg" width="642" height="642">
+                <use xlink:href="./img/sprite.svg#icon-slider__union"></use>
+              </svg>
+              <img src="./img/ring-general.png" alt="Кольцо" width="548">
+
+              <div class="general-slider__inner">
+                <p class="general-slider__text">
+                  <span class="general-slider__discount">Суперскидка до 40%</span>
+                  <span class="general-slider__production">НА СЕРЕБРО</span>
+                </p>
+                <a class="general-slider__link" href="#" target="_blank">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <svg class="general-slider__svg" width="642" height="642">
+                <use xlink:href="./img/sprite.svg#icon-slider__union"></use>
+              </svg>
+              <img src="./img/ring-general.png" alt="Кольцо" width="548">
+
+              <div class="general-slider__inner">
+                <p class="general-slider__text">
+                  <span class="general-slider__discount">Суперскидка до 20%</span>
+                  <span class="general-slider__production">НА ЗОЛОТО</span>
+                </p>
+                <a class="general-slider__link" href="#" target="_blank">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+          <button class="swiper-button-next" type="button"></button>
+          <button class="swiper-button-prev" type="button"></button>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="popular-categories">
+        <h1 class="popular-categories__heading">Популярные категории</h1>
+        <ul class="popular-categories__list">
+          <li class="popular-categories__item">
+            <img class="popular-categories__picture" src="./img/ring-popular.png" alt="Кольцо">
+            <span class="popular-categories__product">Кольцо</span>
+          </li>
+
+          <li class="popular-categories__item">
+            <img class="popular-categories__picture" src="./img/earrings.png" alt="Серьги">
+            <span class="popular-categories__product">Серьги</span>
+          </li>
+
+          <li class="popular-categories__item">
+            <img class="popular-categories__picture" src="./img/engagement-rings.png" alt="Помолвочные кольца"
+              width="127">
+            <span class="popular-categories__product">Помолвочные кольца</span>
+          </li>
+
+          <li class="popular-categories__item">
+            <img class="popular-categories__picture" src="./img/necklaces-pendants.png" alt="Колье и подвески">
+            <span class="popular-categories__product">Колье и подвески</span>
+          </li>
+
+          <li class="popular-categories__item">
+            <img class="popular-categories__picture" src="./img/watch.png" alt="Часы">
+            <span class="popular-categories__product">Часы</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="sale-block">
+        <h1 class="sale-block__heading">Распродажа</h1>
+        <ul class="sale-block__list">
+          <li class="sale-block__item">
+            <button class="sale-block__button sale-block__button--active" type="button"
+              data-target="ring">Кольца</button>
+          </li>
+
+          <li class="sale-block__item">
+            <button class="sale-block__button" type="button" data-target="earrings">Серьги</button>
+          </li>
+
+          <li class="sale-block__item">
+            <button class="sale-block__button" type="button" data-target="bracelets">Браслеты</button>
+          </li>
+
+          <li class="sale-block__item">
+            <button class="sale-block__button" type="button" data-target="watch">Часы</button>
+          </li>
+
+          <li class="sale-block__item sale-block__item--swiper">
+            <button class="swiper-button-next" type="button"></button>
+            <button class="swiper-button-prev" type="button"></button>
+          </li>
+        </ul>
+
+        <div class="sale-block__box">
+
+          <div class="sale-block__content sale-block__content--active" id="ring">
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <span class="card-block__sticker">Sale</span>
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                  <span class="price-block__discount">-45%</span>
+                </div>
+
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">56 000 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">37 500 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner">
+                  <p class="card-block__text">
+                    <span class="card-block__price card-block__price--new">39 200 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="card-block__text card-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+          </div>
+
+          <div class="sale-block__content" id="earrings">
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <span class="card-block__sticker">Sale</span>
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                  <span class="price-block__discount">-45%</span>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">37 500 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/earrings.png" alt="Серьги">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">29 000 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+          </div>
+
+          <div class="sale-block__content" id="bracelets">
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <span class="card-block__sticker">Sale</span>
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                  <span class="price-block__discount">-45%</span>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+          </div>
+
+          <div class="sale-block__content" id="watch">
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <span class="card-block__sticker">Sale</span>
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__1.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                  <span class="price-block__discount">-45%</span>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__2.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                  <span class="price-block__discount">-45%</span>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__3.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                  <span class="price-block__discount">-45%</span>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+
+            <article class="sale-block card-block">
+              <div class="card-block__wrapper">
+                <ul class="card-block__navigation">
+                  <li class="card-block__item">
+                    <button class="card-block__favorite" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                      </svg>
+                    </button>
+                  </li>
+
+                  <li class="card-block__item">
+                    <button class="card-block__view" type="button">
+                      <svg class="contact-bar__svg" width="24" height="24">
+                        <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="swiper card-swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="" src="./img/rign-sale__4.png" alt="Кольца">
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="card-block__inner price-block">
+                  <p class="price-block__text">
+                    <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                    <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                  </p>
+                  <span class="price-block__discount">-45%</span>
+                </div>
+              </div>
+
+              <p class="price-block__text price-block__description">
+                Стильное кольцо из белого золота c бриллиантами
+              </p>
+
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="discount-block">
+        <h1 class="discount-block__heading">Блок со скидками</h1>
+        <ul class="discount-block__list">
+          <li class="discount-block__item">
+            <div class="discount-block__wrapper">
+              <img class="discount-block__picture" src="./img/diskount-image__1.png" alt="Украшения">
+
+              <div class="discount-block__box">
+
+                <svg class="discount-block__svg">
+                  <use xlink:href="./img/sprite.svg#icon-slider__union"></use>
+                </svg>
+
+                <p class="discount-block__text">
+                  Скидки
+                  на все украшения с бриллиантами
+                </p>
+                <p class="discount-block__discount">
+                  <span class="discount-block__value">До</span>
+                  <span class="discount-block__percent">-50%</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="discount-block__item">
+            <div class="discount-block__wrapper">
+              <img class="discount-block__picture" src="./img/diskount-image__2.png" alt="Украшения">
+
+              <div class="discount-block__box">
+
+                <svg class="discount-block__svg">
+                  <use xlink:href="./img/sprite.svg#icon-slider__union"></use>
+                </svg>
+
+                <p class="discount-block__text">
+                  Скидки
+                  на кольца
+                  и браслеты
+                </p>
+                <p class="discount-block__discount discount-block__discount--red">
+                  <span class="discount-block__value">До</span>
+                  <span class="discount-block__percent">-40%</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="discount-block__item">
+            <div class="discount-block__wrapper">
+              <img class="discount-block__picture" src="./img/diskount-image__3.png" alt="Украшения">
+
+              <div class="discount-block__box">
+                <svg class="discount-block__svg">
+                  <use xlink:href="./img/sprite.svg#icon-slider__union"></use>
+                </svg>
+                <p class="discount-block__text">
+                  снижение цен на обручальные кольца
+                </p>
+                <p class="discount-block__discount discount-block__discount--gold">
+                  <span class="discount-block__value">До</span>
+                  <span class="discount-block__percent">-60%</span>
+                </p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="product-block">
+        <div class="product-block__wrapper">
+          <h1 class="product-block__heading">Товар дня</h1>
+          <div class="product-block__inner">
+            <button class="swiper-button-prev prev-product" type="button"></button>
+            <button class="swiper-button-next next-product" type="button"></button>
+          </div>
+        </div>
+
+        <div class="product-block__slider swiper">
+          <ul class="swiper-wrapper product-block__list">
+
+            <li class="swiper-slide product-block__item">
+
+              <div class="product-block__content">
+
+                <div class="product-block__holder swiper">
+                  <span class="product-block__sticker product-block__sticker--black">New</span>
+                  <span class="product-block__sticker product-block__sticker--gold">Хит</span>
+                  <span class="product-block__sticker product-block__sticker--green">Sale</span>
+
+                  <ul class="product-block__col swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="price-block__picture" src="./img/ring-product__1.png" alt="Кольцо">
+                    </li>
+
+                    <li class="swiper-slide">
+                      <img class="price-block__picture" src="./img/ring-product__1.png" alt="Кольцо">
+                    </li>
+
+                  </ul>
+
+                  <div class="product-block__column">
+                    <button class="swiper-button-prev" type="button"></button>
+                    <button class="swiper-button-next" type="button"></button>
+                  </div>
+                </div>
+
+                <div class="product-block__box">
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__empty"></use>
+                  </svg>
+
+                  <span class="product-block__rating">4.2</span>
+                  <h2 class="product-block__head">Кольцо из золота с бриллиантами</h2>
+                  <span class="product-block__article">Артикул: 1012076</span>
+
+                  <div class="product-block__box price-block">
+                    <p class="price-block__text">
+                      <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                      <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                    </p>
+                    <span class="price-block__discount">-45%</span>
+
+                    <ul class="timer-block">
+
+                      <li class="timer-block__item timer-block__colon">
+                        <span class="timer-block__time timer-block__hours">12</span>
+                        <span class="timer-block__text">часов</span>
+                      </li>
+
+                      <li class="timer-block__item timer-block__colon">
+                        <span class="timer-block__time timer-block__minutes">46</span>
+                        <span class="timer-block__text">минут</span>
+                      </li>
+
+                      <li class="timer-block__item">
+                        <span class="timer-block__time timer-block__minutes">51</span>
+                        <span class="timer-block__text">секунд</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <fieldset class="product-block__group">
+                    <legend class="product-block__general product-form">Цвет</legend>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-gray"
+                        id="color-gray">
+                      <span class="product-form__color product-form__color--gray"></span>
+                    </label>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-gold"
+                        id="color-gold">
+                      <span class="product-form__color product-form__color--gold"></span>
+                    </label>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-ginger"
+                        id="color-ginger">
+                      <span class="product-form__color product-form__color--ginger"></span>
+                    </label>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-green"
+                        id="color-green">
+                      <span class="product-form__color product-form__color--green"></span>
+                    </label>
+
+                  </fieldset>
+
+                  <h3 class="product-form__general">Размер
+                    <div class="product-form__column">
+                      <svg class="product-form__svg product-form__svg--gray" width="7" height="12">
+                        <use xlink:href="./img/sprite.svg#icon-question"></use>
+                      </svg>
+                      <p class="product-form__cloud">Также как существующая теория напрямую зависит от экономической
+                        целесообразности принимаемых решений.</p>
+                    </div>
+                  </h3>
+
+                  <ul class="product-form__list">
+                    <li class="product-form__item">
+                      <button class="product-form__button" type="button" name="16,5">16,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="17,5" type="button">17,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="18,5" type="button">18,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19" type="button">19</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">19,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">19,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">18,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">19</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5-disabled" type="button" disabled>19,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5-disabled" type="button" disabled>19,5</button>
+                    </li>
+
+                  </ul>
+
+                  <div class="product-block__container">
+                    <ul class="product-block__form">
+
+                      <li class="product-block__item button-submit">
+                        <button class="button-submit__send button-submit__basket" type="button">в корзину</button>
+                      </li>
+
+                      <li class="product-block__item button-submit">
+                        <button class="button-submit__send button-submit__buy" type="button">купить в 1 клик</button>
+                      </li>
+                    </ul>
+
+                    <ul class="product-block__union">
+                      <li class="product-block__item">
+                        <button class="product-block__btn" type="button">
+                          <svg class="product-block__svg" width="24" height="24">
+                            <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                          </svg>
+                          <span class="product-block__description">Сохранить</span>
+                        </button>
+                      </li>
+
+                      <li class="product-block__item">
+                        <button class="product-block__btn" type="button">
+                          <svg class="product-block__svg product-block__svg--gray" width="24" height="24">
+                            <use xlink:href="./img/sprite.svg#icon-compare"></use>
+                          </svg>
+                          <span class="product-block__description">Сравнить</span>
+                        </button>
+                      </li>
+
+                      <li class="product-block__item">
+                        <button class="product-block__btn" type="button">
+                          <svg class="product-block__svg" width="24" height="24">
+                            <use xlink:href="./img/sprite.svg#icon-chart__button"></use>
+                          </svg>
+                          <span class="product-block__description">Поделиться</span>
+                        </button>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide product-block__item">
+
+              <div class="product-block__content">
+
+                <div class="product-block__holder swiper">
+                  <span class="product-block__sticker product-block__sticker--black">New</span>
+                  <span class="product-block__sticker product-block__sticker--gold">Хит</span>
+                  <span class="product-block__sticker product-block__sticker--green">Sale</span>
+
+                  <ul class="product-block__col swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="price-block__picture" src="./img/ring-product__1.png" alt="Кольцо">
+                    </li>
+
+                    <li class="swiper-slide">
+                      <img class="price-block__picture" src="./img/ring-product__1.png" alt="Кольцо">
+                    </li>
+
+                  </ul>
+
+                  <div class="product-block__column">
+                    <button class="swiper-button-prev" type="button"></button>
+                    <button class="swiper-button-next" type="button"></button>
+                  </div>
+                </div>
+
+                <div class="product-block__box">
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__full"></use>
+                  </svg>
+
+                  <svg class="product-block__svg" width="15" height="15">
+                    <use xlink:href="./img/sprite.svg#icon-star__empty"></use>
+                  </svg>
+
+                  <span class="product-block__rating">4.2</span>
+                  <h2 class="product-block__head">Кольцо из золота с бриллиантами</h2>
+                  <span class="product-block__article">Артикул: 1012076</span>
+
+                  <div class="product-block__box price-block">
+                    <p class="price-block__text">
+                      <span class="price-block__price price-block__price--new">41 000 ₽</span>
+                      <span class="price-block__price price-block__price--old">65 000 ₽</span>
+                    </p>
+                    <span class="price-block__discount">-45%</span>
+
+                    <ul class="timer-block">
+
+                      <li class="timer-block__item timer-block__colon">
+                        <span class="timer-block__time timer-block__hours">12</span>
+                        <span class="timer-block__text">часов</span>
+                      </li>
+
+                      <li class="timer-block__item timer-block__colon">
+                        <span class="timer-block__time timer-block__minutes">46</span>
+                        <span class="timer-block__text">минут</span>
+                      </li>
+
+                      <li class="timer-block__item">
+                        <span class="timer-block__time timer-block__minutes">51</span>
+                        <span class="timer-block__text">секунд</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <fieldset class="product-block__group">
+                    <legend class="product-block__general product-form">Цвет</legend>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-gray"
+                        id="color-gray">
+                      <span class="product-form__color product-form__color--gray"></span>
+                    </label>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-gold"
+                        id="color-gold">
+                      <span class="product-form__color product-form__color--gold"></span>
+                    </label>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-ginger"
+                        id="color-ginger">
+                      <span class="product-form__color product-form__color--ginger"></span>
+                    </label>
+
+                    <label class="product-form__label">
+                      <input class="product-form__checkbox" type="radio" name="color" value="color-green"
+                        id="color-green">
+                      <span class="product-form__color product-form__color--green"></span>
+                    </label>
+
+                  </fieldset>
+
+                  <h3 class="product-form__general">Размер
+                    <div class="product-form__column">
+                      <svg class="product-form__svg product-form__svg--gray" width="7" height="12">
+                        <use xlink:href="./img/sprite.svg#icon-question"></use>
+                      </svg>
+                      <p class="product-form__cloud">Также как существующая теория напрямую зависит от экономической
+                        целесообразности принимаемых решений.</p>
+                    </div>
+                  </h3>
+
+                  <ul class="product-form__list">
+                    <li class="product-form__item">
+                      <button class="product-form__button" type="button" name="16,5">16,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="17,5" type="button">17,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="18,5" type="button">18,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19" type="button">19</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">19,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">19,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">18,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5" type="button">19</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5-disabled" type="button" disabled>19,5</button>
+                    </li>
+
+                    <li class="product-form__item">
+                      <button class="product-form__button" name="19,5-disabled" type="button" disabled>19,5</button>
+                    </li>
+
+                  </ul>
+
+                  <div class="product-block__container">
+                    <ul class="product-block__form">
+
+                      <li class="product-block__item button-submit">
+                        <button class="button-submit__send button-submit__basket" type="button">в корзину</button>
+                      </li>
+
+                      <li class="product-block__item button-submit">
+                        <button class="button-submit__send button-submit__buy" type="button">купить в 1 клик</button>
+                      </li>
+                    </ul>
+
+                    <ul class="product-block__union">
+                      <li class="product-block__item">
+                        <button class="product-block__btn" type="button">
+                          <svg class="product-block__svg" width="24" height="24">
+                            <use xlink:href="./img/sprite.svg#icon-favotire__sale"></use>
+                          </svg>
+                          <span class="product-block__description">Сохранить</span>
+                        </button>
+                      </li>
+
+                      <li class="product-block__item">
+                        <button class="product-block__btn" type="button">
+                          <svg class="product-block__svg product-block__svg--gray" width="24" height="24">
+                            <use xlink:href="./img/sprite.svg#icon-compare"></use>
+                          </svg>
+                          <span class="product-block__description">Сравнить</span>
+                        </button>
+                      </li>
+
+                      <li class="product-block__item">
+                        <button class="product-block__btn" type="button">
+
+                          <svg class="product-block__svg" width="24" height="24">
+                            <use xlink:href="./img/sprite.svg#icon-chart__button"></use>
+                          </svg>
+
+                          <span class="product-block__description">Поделиться</span>
+                        </button>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="articles-block">
+        <div class="articles-block__wrapper">
+          <h1 class="articles-block__heading">Статьи</h1>
+
+          <a class="articles-block__link" href="#">Читать все
+            <svg class="product-block__svg" width="24" height="24">
+              <use xlink:href="./img/sprite.svg#icon-arrow__articles"></use>
+            </svg>
+          </a>
+
+        </div>
+
+        <ul class="articles-block__list">
+
+          <li class="articles-block__item">
+            <a class="articles-bloc__news" href="#" target="_blank">
+              <img class="articles-block__picture" src="./img/articles-photo__1.png" alt="Кольца на столе">
+              <time class="articles-block__time" datetime="21.09.2021">21 сентября 2021</time>
+              <p class="articles-block__text">Обручальные кольца: тренды 2021</p>
+            </a>
+          </li>
+
+          <li class="articles-block__item">
+            <a class="articles-bloc__news" href="#" target="_blank">
+              <img class="articles-block__picture" src="./img/articles-photo__2.png" alt="Девушка">
+              <time class="articles-block__time" datetime="21.09.2021">25 сентября 2021</time>
+              <p class="articles-block__text">Главные ювелирные тренды года</p>
+            </a>
+          </li>
+
+          <li class="articles-block__item">
+            <a class="articles-bloc__news" href="#" target="_blank">
+              <img class="articles-block__picture" src="./img/articles-photo__3.png" alt="Жемчуг">
+              <time class="articles-block__time" datetime="21.09.2021">21 сентября 2021</time>
+              <p class="articles-block__text">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
+            </a>
+          </li>
+
+          <li class="articles-block__item">
+            <a class="articles-bloc__news" href="#" target="_blank">
+              <img class="articles-block__picture" src="./img/articles-photo__4.png" alt="Советы как отличить">
+              <time class="articles-block__time" datetime="21.09.2021">21 сентября 2021</time>
+              <p class="articles-block__text">Как отличить золото от подделки: 10 практических советов</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

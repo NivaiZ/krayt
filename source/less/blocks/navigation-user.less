@@ -1,0 +1,30 @@
+.navigation-user__list {
+  display: flex;
+}
+
+.navigation-user__link--separator {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 2px;
+    border-top: 1px solid @basic-black;
+    transform: rotate(90deg);
+    bottom: 8px;
+  }
+}
+
+.navigation-user__link {
+  text-decoration: none;
+  color: @basic-black;
+  position: relative;
+}
+
+.navigation-user__item {
+  padding-left: 10px;
+}
+
+.navigation-user {
+  display: flex;
+  align-items: center;
+}

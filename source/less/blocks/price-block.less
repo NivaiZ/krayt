@@ -1,0 +1,50 @@
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  column-gap: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid @Anti-flash-white;
+    bottom: -20px;
+    width: 100%;
+  }
+}
+
+.price-block__text {
+  font-family: @font-basic;
+  color: @basic-black;
+}
+
+.price-block__price--new {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.price-block__price--old {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: @extra-grey;
+}
+
+.price-block__discount {
+  background-color: @extra-red;
+  color: @basic-white;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 100%;
+  padding: 4px 8px 4px 8px;
+}
+
+.price-block__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+}

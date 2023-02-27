@@ -1,0 +1,35 @@
+.form-search__search {
+  .reset-button();
+  position: absolute;
+  left: 0;
+}
+
+.form-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -45px;
+    border-top: 1px solid @Anti-flash-white;
+    width: 62px;
+    height: 2px;
+    transform: rotate(90deg);
+  }
+}
+
+.form-search__input {
+  background-color: @extra-gray;
+  border: none;
+  padding: 25px 25px 25px 40px;
+
+  &::placeholder {
+    color: @basic-gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    padding-left: 15px;
+  }
+}
